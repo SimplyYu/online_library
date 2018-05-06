@@ -1,0 +1,16 @@
+.editProfile-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.editProfile-title {
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 1px solid darkgray;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+.editProfile-proInfoContainer > div {
+  padding: 10px 0;
+}

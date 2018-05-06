@@ -1,0 +1,26 @@
+.headerContainer {
+  font-size: 16px;
+  background: beige;
+  padding: 15px 40px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+  margin: 0 auto;
+}
+
+.mr40 {
+  margin-right: 40px;
+}
+
+.ml40 {
+  margin-left: 40px;
+}
+
+.bodyContainer {
+  padding: 25px 40px;
+  width: 85%;
+  margin: 0 auto;
+}
