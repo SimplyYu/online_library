@@ -2,7 +2,7 @@ import React from 'react';
 import './shareBooks.css';
 import { Tabs } from 'antd';
 const TabPane = Tabs.TabPane;
-import WrappedShareBookInfoForm from '../shareBookInfoForm/shareBookInfoForm';
+import WrappedBookInfoForm from '../bookInfoForm/bookInfoForm';
 
 class ShareBooks extends React.Component {
   constructor(props) {
@@ -18,10 +18,10 @@ class ShareBooks extends React.Component {
       <div className="shareBook-tabContainer">
         <Tabs onChange={this.tabsOnChange} type="card">
           <TabPane tab="纸质书籍" key="1">
-            <WrappedShareBookInfoForm type="share"/>
+            <WrappedBookInfoForm type="share"/>
           </TabPane>
           <TabPane tab="电子书籍" key="2">
-            <WrappedShareBookInfoForm type="share" eBook={true} />
+            <WrappedBookInfoForm type="share" eBook={true} />
           </TabPane>
         </Tabs>
       </div>

@@ -1,0 +1,17 @@
+.login-form {
+  width: 30%;
+  margin: 120px auto;
+}
+
+.login-form-button {
+  width: 100%;
+}
+
+.login-forgetRegister {
+  display: flex;
+  float: right;
+}
+
+.login-pr10 {
+  padding-right: 10px;
+}

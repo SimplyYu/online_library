@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { Form, Input, Button, Upload, message, Icon, Select } from 'antd';
 const FormItem = Form.Item;
 const { TextArea } = Input;
-const Option = Select.Option;
 
 const formItemLayout = {
   labelCol: { span: 3 },
@@ -34,19 +33,12 @@ const props = {
   },
 };
 
-class ShareBookInfoForm extends React.Component {
+class BookInfoForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       bookType: 'p-book',
     }
-  }
-
-  handleSelectChange = (value) => {
-    console.log('----->', value)
-    this.setState({
-      bookType: value,
-    })
   }
 
   getBookInfoForm = (type) => {
@@ -170,11 +162,11 @@ class ShareBookInfoForm extends React.Component {
   }
 }
 
-const WrappedShareBookInfoForm = Form.create()(ShareBookInfoForm);
+const WrappedBookInfoForm = Form.create()(BookInfoForm);
 
-ShareBookInfoForm.PropTypes = {
+BookInfoForm.PropTypes = {
   eBook: PropTypes.bool,
   type: PropTypes.string
 };
 
-export default WrappedShareBookInfoForm;
+export default WrappedBookInfoForm;

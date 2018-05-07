@@ -2,7 +2,7 @@
 
 ## 本地运行
 
-* 安装 npm, yarn 和 nodejs (yarn 可不装)
+* linux环境安装 npm, yarn 和 nodejs (yarn 可不装)
 
     sudo  apt-get install npm
     

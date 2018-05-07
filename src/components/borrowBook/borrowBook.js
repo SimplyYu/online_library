@@ -1,6 +1,6 @@
 import React from 'react';
 import './borrowBook.css';
-import WrappedShareBookInfoForm from '../shareBookInfoForm/shareBookInfoForm';
+import WrappedBookInfoForm from '../bookInfoForm/bookInfoForm';
 
 class BorrowBook extends React.Component {
   constructor(props) {
@@ -10,7 +10,7 @@ class BorrowBook extends React.Component {
   render() {
     return(
         <div className="shareBook-tabContainer">
-          <WrappedShareBookInfoForm type="borrow"/>
+          <WrappedBookInfoForm type="borrow"/>
         </div>
     )
   }

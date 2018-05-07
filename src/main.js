@@ -11,10 +11,6 @@ import { render } from 'react-dom'
 // 引入React-Router模块
 import { Router, Route, Link, hashHistory, IndexRoute, Redirect, IndexLink} from 'react-router'
 
-// 引入Ant-Design样式 & Animate.CSS样式
-import 'animate.css/animate.min.css'
-import 'font-awesome/css/font-awesome.min.css'
-
 // 引入主体样式文件
 import './main.css'
 
@@ -24,6 +20,7 @@ import IndividualCenter from './components/individualCenter/individualCenter';
 import ShareBooks from './components/shareBooks/shareBooks';
 import EditProfile from './components/editProfile/editProfile';
 import BorrowBook from './components/borrowBook/borrowBook';
+import WrappedLoginForm from './components/login/login';
 
 // 配置导航
 class Header extends React.Component {
@@ -33,6 +30,7 @@ class Header extends React.Component {
   }
 
   render() {
+    const isLogin = false;
     return (
       <div>
         <div className="headerContainer">
@@ -44,7 +42,8 @@ class Header extends React.Component {
             </div>
             <div>
               <Link to="" className="mr40">消息</Link>
-              <Link to="/individualCenter">个人中心</Link>
+              {isLogin ? <Link to="/individualCenter">个人中心</Link> :
+                  <Link to="/login">登录</Link>}
             </div>
           </div>
         </div>
@@ -66,6 +65,7 @@ render((
             <Route path="shareBooks" component={ShareBooks} />
             <Route path="editProfile" component={EditProfile} />
             <Route path="borrowBook" component={BorrowBook} />
+            <Route path="login" component={WrappedLoginForm} />
         </Route>
     </Router>
 ), document.getElementById('app'));
