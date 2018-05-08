@@ -21,6 +21,7 @@ import ShareBooks from './components/shareBooks/shareBooks';
 import EditProfile from './components/editProfile/editProfile';
 import BorrowBook from './components/borrowBook/borrowBook';
 import WrappedLoginForm from './components/login/login';
+import WrappedRegistrationForm from './components/register/register';
 
 // 配置导航
 class Header extends React.Component {
@@ -66,6 +67,7 @@ render((
             <Route path="editProfile" component={EditProfile} />
             <Route path="borrowBook" component={BorrowBook} />
             <Route path="login" component={WrappedLoginForm} />
+            <Route path="register" component={WrappedRegistrationForm} />
         </Route>
     </Router>
 ), document.getElementById('app'));

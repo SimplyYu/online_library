@@ -2,6 +2,7 @@ import React from 'react';
 import './login.css';
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
 const FormItem = Form.Item;
+import { Link } from 'react-router';
 
 class Login extends React.Component {
   constructor(props) {
@@ -42,7 +43,7 @@ class Login extends React.Component {
             </Form>
             <div className="login-forgetRegister">
               <div className="login-pr10">忘记密码</div>
-              <div>注册新账号</div>
+              <Link to="/register">注册新账号</Link>
             </div>
           </div>
         </div>
